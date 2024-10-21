@@ -8,13 +8,13 @@
             <div class="nav dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false" data-bs-auto-close="outside">
-                    Usuario
+                    <?= $_SESSION['user'] ?>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end p-2" data-bs-theme="dark" style="width: 16rem;">
-                    <li><span class="dropdown-item-text">UR: </span></li>
-                    <li><span class="dropdown-item-text">Área: </span></li>
+                    <li><span class="dropdown-item-text">UR: <?= $_SESSION['ur'] ?></span></li>
+                    <li><span class="dropdown-item-text">Área: <?= $_SESSION['area'] ?></span></li>
                     <li class="dropdown-item-text">
-                        <a href="#" class="btn btn-dark w-100">Cerrar sesión</a>
+                        <a href="controller/logout.controller" class="btn btn-dark w-100">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>

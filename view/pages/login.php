@@ -20,7 +20,7 @@
                     autocomplete="off" required>
                 <label for="password">Contraseña</label>
             </div>
-            <button type="button" class="btn btn-outline-secondary border" onclick="showPassword()">
+            <button type="button" class="btn btn-outline-secondary border" onclick="showPassword()" name="mostrarPassword">
                 <i class="bi bi-eye-slash-fill" id="iconPassword"></i>
             </button>
         </div>

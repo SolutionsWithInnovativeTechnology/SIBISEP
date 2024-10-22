@@ -14,7 +14,7 @@
                     <li><span class="dropdown-item-text">UR: <?= $_SESSION['ur'] ?></span></li>
                     <li><span class="dropdown-item-text">Área: <?= $_SESSION['area'] ?></span></li>
                     <li class="dropdown-item-text">
-                        <a href="controller/logout.controller" class="btn btn-dark w-100">Cerrar sesión</a>
+                        <a href="controller/logout.controller.php" class="btn btn-dark w-100">Cerrar sesión</a>
                     </li>
                 </ul>
             </div>

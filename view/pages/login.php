@@ -1,5 +1,5 @@
 <main class="d-flex flex-column align-items-center">
-    <form name="formu-acceso" action="controller/login.controller" method="post">
+    <form name="formu-acceso" action="controller/login.controller.php" method="post">
 
         <h1 class="mb-4 text-center fw-bold">Acceso a usuarios</h1>
 

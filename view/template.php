@@ -19,7 +19,7 @@
             <?php 
                     if(isset($_GET['page'])){
                         $page = $_GET['page'];
-                        include_once "view/pages/". $page. ".php";
+                        include_once "view/pages/$page.php";
                     }else{
                         include_once "view/pages/sistemas.php";
                     }

@@ -1,12 +1,11 @@
 <?php
-
-use function PHPSTORM_META\type;
-
     session_start();
 
     $user = $_POST['user'];
-
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    
     $_SESSION['user'] = $user;
+    $_SESSION['password'] = $password;
     $_SESSION['ur'] = 611;
     $_SESSION['area'] = "Area de Ejemplo";
 

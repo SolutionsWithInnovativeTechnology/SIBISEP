@@ -1,12 +1,19 @@
+<?php
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https" : "http";
+    $host = $_SERVER['HTTP_HOST'];
+    $root = ($host == "localhost") ? "/SIBISEP" : "";
+    $url = "$protocol://$host$root";
+?>
+
 <header>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top mb-5" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">
+            <a class="navbar-brand" href="<?= $url ?>">
                 <img src="view/resources/img/logoCBTIS.webp" height="50" alt="Logo">
             </a>
 
             <div class="nav dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false" data-bs-auto-close="outside">
                     <?= $_SESSION['user'] ?>
                 </a>

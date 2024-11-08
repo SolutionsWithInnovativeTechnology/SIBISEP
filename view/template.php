@@ -3,7 +3,7 @@
 
 <?php require_once "modules/head.php" ?>
 
-<body class="bg-light vh-100 align-content-center">
+<body class="bg-light vh-100 d-flex flex-column align-items-center justify-content-center">
 
     <?php
         if(empty($_SESSION['user'])){
@@ -13,7 +13,7 @@
 
     <?php include "modules/header.php" ?>
 
-    <div class="container">
+    <div class="container flex-grow-1 d-flex flex-column justify-content-center">
         <main class="d-flex flex-column align-items-center">
 
             <?php 

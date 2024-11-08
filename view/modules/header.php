@@ -5,8 +5,8 @@
     $url = "$protocol://$host$root";
 ?>
 
-<header>
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top mb-5" data-bs-theme="dark">
+<header class="mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="<?= $url ?>">
                 <img src="view/resources/img/logoCBTIS.webp" height="50" alt="Logo">

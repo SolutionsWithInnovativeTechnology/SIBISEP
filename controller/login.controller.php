@@ -4,6 +4,7 @@
     $user = $_POST['user'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     
+    $_SESSION['id'] = 1;
     $_SESSION['user'] = $user;
     $_SESSION['password'] = $password;
     $_SESSION['ur'] = 611;

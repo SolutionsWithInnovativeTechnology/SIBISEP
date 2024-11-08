@@ -37,7 +37,7 @@
 ?>
 
 <div class="p-5 rounded-3 shadow-lg bg-white mt-5">
-    <form name="form_alta" action="#" method="post">
+    <form name="form_alta" action="index.php?controller=bienes&action=save" method="post">
         <h2 class="h4 fw-bold text-dark mb-2 text-center text-uppercase">Formulario de alta</h2>
 
         <section class="py-2">
